@@ -1,0 +1,157 @@
+#banner {
+    background-color: #fcfde3;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    display: flex;
+    justify-content: center;
+    height: 300px;
+    padding: 30px;
+    background-image: url(../img/024.jpg);
+    opacity: 0.85;
+}
+
+#banner>.container {
+    display: flex;
+    width: 90%;
+}
+
+.circle1 {
+    position: absolute;
+    width: 250px;
+    height: 250px;
+    border: 12px solid rgb(254, 115, 115);
+    border-radius: 50%;
+    box-shadow: 1px 1px 3px rgb(132, 0, 0);
+    transform-style: preserve-3d;
+    animation: move 10s infinite;
+}
+
+@keyframes move {
+    0% {
+        top: 65px;
+        left: 0px;
+        transform: rotateY(0deg);
+    }
+
+    35% {
+        top: 145px;
+        left: 500px;
+        transform: rotateY(600deg);
+    }
+
+    70% {
+        top: 80px;
+        left: 800px;
+        transform: rotateY(1200deg);
+    }
+
+    100% {
+        top: 65px;
+        left: 0px;
+        transform: rotateY(1800deg);
+    }
+
+}
+
+.square1 {
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-bottom: 180px solid rgb(249, 135, 230);
+    border-left: 100px solid transparent;
+    border-right: 100px solid transparent;
+    animation: run 10s infinite;
+}
+
+@keyframes run {
+    0% {
+        top: 150px;
+        right: 0px;
+        transform: rotate(0deg);
+    }
+
+    50% {
+        top: 150px;
+        right: 1800px;
+        transform: rotate(900deg);
+    }
+
+    100% {
+        top: 150px;
+        right: 0px;
+        transform: rotate(1800deg);
+    }
+
+
+}
+
+.square2 {
+    position: absolute;
+    width: 250px;
+    height: 250px;
+    border: 12px solid rgb(135, 205, 249);
+    box-shadow: 1px 1px 3px rgb(11, 0, 217);
+    transform-style: preserve-3d;
+    animation: go 10s infinite;
+}
+
+@keyframes go {
+    0% {
+        top: 65px;
+        right: 0px;
+        transform: rotateY(0deg);
+    }
+
+    35% {
+        top: 145px;
+        right: 500px;
+        transform: rotateY(600deg);
+    }
+
+    70% {
+        top: 80px;
+        right: 800px;
+        transform: rotateY(1200deg);
+    }
+
+    100% {
+        top: 65px;
+        right: 0px;
+        transform: rotateY(1800deg);
+    }
+
+}
+
+.square3 {
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-bottom: 180px solid rgb(141, 249, 135);
+    border-left: 100px solid transparent;
+    border-right: 100px solid transparent;
+    animation: pig 10s infinite;
+}
+
+@keyframes pig {
+    0% {
+        top: 150px;
+        left: 0px;
+        transform: rotate(0deg);
+    }
+
+    50% {
+        top: 150px;
+        left: 1800px;
+        transform: rotate(900deg);
+    }
+
+    100% {
+        top: 150px;
+        left: 0px;
+        transform: rotate(1800deg);
+    }
+
+
+
+}

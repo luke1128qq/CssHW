@@ -1,0 +1,96 @@
+#portfolio {
+    background-color: #ffe1d1;
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+    height: 650px;
+}
+
+#portfolio>.container {
+    width: 80%;
+    height: 300px;
+    display: grid;
+    gap: 25px;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(3, 180px);
+}
+
+#portfolio img {
+    width: 100%;
+    height: 100%;
+    border: 3px solid rgb(255, 255, 255);
+    border-radius: 15px;
+    object-fit: cover;
+    box-shadow: 1px 1px 5px rgb(61, 61, 61);
+
+}
+
+.momo {
+    position: relative;
+    transform-style: preserve-3d;
+}
+
+.momo img {
+    position: absolute;
+    top: 0;
+    backface-visibility: hidden;
+    transition: transform 1s;
+}
+
+.back {
+    position: absolute;
+    display: flex;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(189, 144, 235);
+    border-radius: 15px;
+    backface-visibility: hidden;
+    transform: rotateY(180deg);
+    transition: transform 1s;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    font-weight: bolder;
+}
+
+.momo:hover.momo img {
+    transform: rotateY(180deg);
+}
+
+.momo:hover .back {
+    transform: rotateY(0deg);
+    transition: transform 1s;
+}
+
+.momo1 {
+    grid-area: 1 / 1 / 3 / 3;
+}
+
+.momo2 {
+    grid-area: 1 / 3 / 2 / 4;
+}
+
+.momo3 {
+    grid-area: 1 / 4 / 3 / 5;
+}
+
+.momo4 {
+    grid-area: 1 / 5 / 3 / 6;
+}
+
+.momo5 {
+    grid-area: 2 / 3 / 3 / 4;
+}
+
+.momo6 {
+    grid-area: 3 / 1 / 4 / 2;
+}
+
+.momo7 {
+    grid-area: 3 / 2 / 4 / 5;
+}
+
+.momo8 {
+    grid-area: 3 / 5 / 4 / 6;
+}

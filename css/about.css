@@ -1,0 +1,184 @@
+#about {
+    background-color: #c4d5fd;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+#about>.container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 90%;
+}
+
+.about-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    width: 30%;
+    margin-right: 50px;
+}
+
+.about-img>img {
+    box-shadow: 2px 2px 5px rgb(66, 66, 66);
+    border: 10px solid #f5f5f5;
+    border-radius: 20px;
+}
+
+.about-introduce {
+    justify-content: center;
+    height: auto;
+    width: 50%;
+}
+
+.about-text>h2 {
+    margin-bottom: 10px;
+}
+
+.about-text>p {
+    text-indent: 10px;
+}
+
+
+.about-text {
+    margin: 30px auto;
+    background-color: #f4f6f4;
+    border-radius: 20px;
+    padding: 15px;
+    box-shadow: 2px 2px 5px rgb(67, 67, 67);
+}
+
+.about-school {
+    margin: 30px auto;
+    background-color: #f4f6f4;
+    border-radius: 20px;
+    padding: 15px;
+    box-shadow: 2px 2px 5px rgb(67, 67, 67);
+}
+
+.about-school>h2 {
+    margin-bottom: 10px;
+}
+
+.about-school>h3 {
+    margin: 15px auto;
+}
+
+
+.about-img>img {
+    width: 90%;
+    display: inline-block;
+}
+
+.about-skill {
+    margin: 30px auto;
+    background-color: #f4f6f4;
+    border-radius: 20px;
+    padding: 15px;
+    box-shadow: 2px 2px 5px rgb(67, 67, 67);
+}
+
+.skill-list>li {
+    display: flex;
+}
+
+.skill-name {
+    display: flex;
+    align-items: center;
+    margin: 10px;
+}
+
+.skill-bar {
+    background-color: #f5f5f5;
+    height: 22px;
+    width: 200px;
+    border-radius: 30px;
+    box-shadow: 1px 1px 5px rgb(50, 50, 50) inset;
+    margin: 10px;
+    align-items: center;
+    padding: 0.5px;
+}
+
+.skill-level {
+    display: flex;
+    border-radius: 30px;
+    height: 100%;
+}
+
+.skill-edu {
+    background: linear-gradient(to right, rgb(255, 58, 28), rgb(255, 223, 141));
+    animation: edu 3s alternate;
+    width: 85%;
+    justify-content: center;
+    align-items: center;
+
+}
+
+@keyframes edu {
+    from {
+        width: 0%;
+    }
+
+    to {
+        width: 85%;
+    }
+}
+
+.skill-mov {
+    background: linear-gradient(to right, rgb(170, 100, 255), rgb(99, 255, 255));
+    animation: mov 3s alternate;
+    width: 70%;
+    justify-content: center;
+    align-items: center;
+
+}
+
+@keyframes mov {
+    from {
+        width: 0%;
+    }
+
+    to {
+        width: 70%;
+    }
+}
+
+.skill-pod {
+    background: linear-gradient(to right, rgb(16, 139, 0), rgb(205, 255, 176));
+    animation: pod 3s alternate;
+    width: 80%;
+    justify-content: center;
+    align-items: center;
+
+}
+
+@keyframes pod {
+    from {
+        width: 0%;
+    }
+
+    to {
+        width: 80%;
+    }
+}
+
+.skill-tea {
+    background: linear-gradient(to right, rgb(154, 136, 54), rgb(255, 249, 143));
+    animation: tea 3s alternate;
+    width: 90%;
+    justify-content: center;
+    align-items: center;
+
+}
+
+@keyframes tea {
+    from {
+        width: 0%;
+    }
+
+    to {
+        width: 90%;
+    }
+}
